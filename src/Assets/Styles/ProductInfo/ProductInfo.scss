@@ -1,4 +1,45 @@
 #product-info{
     position: absolute;
-    top: 40%;
+    top: 30%;
+    right: 0;
+    left: 0;
+
+    margin: 0 auto;
+    max-width: 600px;
+    width: 80%;
+}
+
+.product-info-inner{
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    padding: 2rem 1.5rem;
+    position: relative;
+    text-align: center;
+    width: 100%;
+
+    h2, p{
+        margin-bottom: 1.5rem;
+    }
+
+    &--intro{
+        padding-top: 3rem;
+    }
+}
+
+.mastercraft-logo{
+    position: absolute;
+    top:-25px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.bookmark{
+    cursor: pointer;
+}
+
+.row-space-between{
+    display:flex;
+    justify-content: space-between;
 }
