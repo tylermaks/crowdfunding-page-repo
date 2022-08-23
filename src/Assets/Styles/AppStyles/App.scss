@@ -1,0 +1,19 @@
+//VARIABLES
+$mdCyan: hsl(176, 50%, 47%);
+$dkCyan: hsl(176, 72%, 28%);
+$dkGray: hsl(0, 0%, 48%);
+
+//SETUP
+*, *::after, *::before{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    font-family: "Commissioner", sans-serif;
+}

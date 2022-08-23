@@ -1,0 +1,45 @@
+#hero {
+  background-image: url("../../images/image-hero-mobile.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 2rem;
+  height: 300px;
+  width: 100%;
+}
+
+#main-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.link-container {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  #hero {
+    background-image: url("../../images/image-hero-desktop.jpg");
+    height: 400px;
+  }
+  .mobile-icon {
+    display: none;
+  }
+  .link-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    color: #fff;
+    max-width: 500px;
+    width: 40%;
+  }
+}
+/*# sourceMappingURL=HeroNav.css.map */
