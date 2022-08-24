@@ -4,7 +4,7 @@
   right: 0;
   left: 0;
   margin: 0 auto;
-  max-width: 600px;
+  max-width: 700px;
   width: 80%;
 }
 
@@ -13,7 +13,8 @@
   border-radius: 15px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
           box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-  padding: 2rem 1.5rem;
+  margin-bottom: 2rem;
+  padding: 3rem 1.5rem;
   position: relative;
   text-align: center;
   width: 100%;
@@ -23,22 +24,6 @@
   margin-bottom: 1.5rem;
 }
 
-.product-info-inner--intro {
-  padding-top: 3rem;
-}
-
-.mastercraft-logo {
-  position: absolute;
-  top: -25px;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-}
-
-.bookmark {
-  cursor: pointer;
-}
-
 .row-space-between {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -46,5 +31,11 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media screen and (min-width: 768px) {
+  .product-info-inner {
+    padding: 3rem;
+  }
 }
 /*# sourceMappingURL=ProductInfo.css.map */

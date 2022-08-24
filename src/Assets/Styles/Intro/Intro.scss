@@ -1,0 +1,45 @@
+$dkGray: hsl(0, 0%, 48%);
+$ltGray: 	hsl(0, 0%, 95%);
+
+.mastercraft-logo{
+    position: absolute;
+    top:-25px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.bookmark-container{
+    display:flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+
+    img{
+        height: 50px;
+        width: 50px;
+    }
+
+    &__text{
+        display:none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .bookmark-container{
+
+        img{
+            position: absolute;
+            top:0;
+            left:0;    
+        }
+
+        &__text{
+            background-color: $ltGray;
+            border-radius: 25px;
+            color: $dkGray;
+            display: inline;
+            padding:1em 3em 1em 4em; 
+        }
+    }
+}

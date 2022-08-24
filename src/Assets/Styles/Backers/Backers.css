@@ -1,0 +1,56 @@
+.backer-stats span {
+  display: block;
+  margin: 1rem 0;
+}
+
+.backer-stats::after {
+  border-bottom: 1px solid #7a7a7a;
+  content: "";
+  display: block;
+  margin: 3rem auto;
+  width: 20%;
+}
+
+.backer-stats:nth-child(3)::after {
+  display: none;
+}
+
+.progress-container {
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  margin-top: 4rem;
+  overflow: hidden;
+  width: 100%;
+  height: 15px;
+}
+
+.progress-bar {
+  background-color: #3cb4ac;
+  border-radius: 10px;
+  width: 75%;
+  height: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .row-start {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .backer-stats {
+    border-right: 1px solid #7a7a7a;
+    margin-right: 3em;
+    padding-right: 3em;
+    text-align: left;
+  }
+  .backer-stats:nth-child(3) {
+    border: none;
+  }
+  .backer-stats::after {
+    display: none;
+  }
+  .progress-container {
+    margin-top: 3rem;
+  }
+}
+/*# sourceMappingURL=Backers.css.map */
