@@ -29,8 +29,6 @@ $mdCyan: hsl(176, 50%, 47%);
     p{
         margin: 2rem 0;
     }
-
-
 }
 
 .h3-alt{
@@ -38,6 +36,35 @@ $mdCyan: hsl(176, 50%, 47%);
 }
 
 .out-of-stock{
-    background-color: $dkGray;
-    cursor: auto;
+    opacity: 0.6;
+
+    button{
+        background-color: $dkGray;
+        cursor: auto;
+
+        &:hover{
+            background-color: $dkGray;
+        }
+    }
+
+    h1, span {
+        color:$dkGray;
+    }  
+}
+
+
+
+@media screen and (min-width: 768px) {
+    .row-package{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .package-container{
+        button{ 
+            margin: 0;
+        }
+    }
 }

@@ -1,4 +1,5 @@
 import React from "react"
+import PackageInfo from "./PackageInfo"
 
 import "../Assets/Styles/About/About.css"
 import {aboutData} from "../componentData"
@@ -24,14 +25,13 @@ function About(){
                         const outOfStock = item.left === 0 ? "out-of-stock" : ""
 
                         return(
-                            <div className="package-container">
-                                <h3>{item.name}</h3>
-                                <h3 className="h3-alt">{"Pledge" + item.price + " or more"}</h3>
-                                <p>{item.description}</p>
-                                <h1>{item.left}</h1>
-                                <span>left</span>
-                                <button className={outOfStock}>Select Reward</button>
-                            </div>
+                            <PackageInfo 
+                                name={item.name}
+                                price={item.price}
+                                description={item.description}
+                                left={item.left}
+                                outOfStock={outOfStock}
+                            />
                         )
                     })
                 }
