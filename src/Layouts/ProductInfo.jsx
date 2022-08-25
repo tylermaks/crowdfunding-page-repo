@@ -7,11 +7,13 @@ import "../Assets/Styles/ProductInfo/ProductInfo.css"
 
 function ProductInfo(){
     return(
-        <section id="product-info">
-            <Intro />
-            <Backers />
-            <About />
-        </section>
+        <div class="container">
+            <section id="product-info">
+                <Intro />
+                <Backers />
+                <About />
+            </section>
+        </div>
     )
 }
 

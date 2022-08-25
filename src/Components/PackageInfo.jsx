@@ -1,22 +1,38 @@
 import React from "react"
 
-function PackageInfo({name, price, description, left, outOfStock}){ 
+//{name, price, description, left, outOfStock}
+import {aboutData} from "../componentData"
+
+function PackageInfo(){ 
     return(
-        <div className={"package-container " + outOfStock}>
-            <div className="row-package">
-                <h3 className="title">{name}</h3>
-                <h3 className="h3-alt">{"Pledge" + price + " or more"}</h3>
-            </div>
-            
-            <p>{description}</p>
-            <div className="row-package">
-                <div>
-                    <h1>{left}</h1>
-                    <span>left</span>
-                </div>
-                <button>Select Reward</button>
-            </div>
+        <div>
+            {
+                aboutData.map(item => {
+
+                    const outOfStock = item.left === 0 ? "out-of-stock" : ""
+
+                    return(
+                        <div className={"package-container " + outOfStock}>
+                            <div className="row-package">
+                                <h3 className="title">{item.name}</h3>
+                                <h3 className="h3-alt">{"Pledge" + item.price + " or more"}</h3>
+                            </div>
+                            
+                            <p>{item.description}</p>
+                            <div className="row-package">
+                                <div>
+                                    <h1>{item.left}</h1>
+                                    <span>left</span>
+                                </div>
+                                <button>Select Reward</button>
+                            </div>
+                        </div>
+                    )
+                })
+            }
         </div>
+
+    
     )
 }
 

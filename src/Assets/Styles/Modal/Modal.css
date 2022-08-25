@@ -1,7 +1,5 @@
-#modal-background {
-  position: absolute;
-  top: 0;
-  left: 0;
+.modal-background {
+  position: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -11,9 +9,38 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 1;
-  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 5rem 0;
   width: 100%;
+  z-index: 1;
+}
+
+.modal {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 3rem 1.5rem;
+  margin: 5rem 0;
+  max-width: 700px;
+  width: 95%;
+}
+
+.modal p {
+  margin: 1.5rem 0;
+}
+
+.modal-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal-inner img {
+  cursor: pointer;
 }
 /*# sourceMappingURL=Modal.css.map */
