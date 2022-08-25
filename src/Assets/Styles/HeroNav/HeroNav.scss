@@ -1,17 +1,23 @@
 #hero{
     background-image: url("../../images/image-hero-mobile.jpg");
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 
-    padding: 2rem;
-    height: 300px;
+    padding-top: 15rem;
+    height: 100%;
     width: 100%;
 }
 
 #main-nav{ 
+    position: absolute;
+    top:0;
+    left: 0;
+
     display: flex; 
     justify-content: space-between;
+
+    padding:2rem;
     width: 100%;
 }
 
@@ -22,7 +28,7 @@
 @media screen and (min-width:768px) {
     #hero{
         background-image: url("../../images/image-hero-desktop.jpg");
-        height: 400px
+        background-size: cover 400px;
     }
 
     .mobile-icon{

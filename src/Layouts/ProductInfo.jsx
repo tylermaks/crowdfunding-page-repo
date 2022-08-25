@@ -7,7 +7,7 @@ import "../Assets/Styles/ProductInfo/ProductInfo.css"
 
 function ProductInfo(){
     return(
-        <div class="container">
+        <div id="product-info-container">
             <section id="product-info">
                 <Intro />
                 <Backers />
