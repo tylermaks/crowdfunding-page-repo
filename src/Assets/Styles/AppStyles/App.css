@@ -5,8 +5,13 @@
 }
 
 html, body, .App {
-  min-height: 100vh;
+  min-height: 100%;
   width: 100%;
+}
+
+.App {
+  position: relative;
+  padding-top: 250px;
 }
 
 body {
@@ -50,5 +55,11 @@ button:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media screen and (min-width: 768px) {
+  .App {
+    padding-top: 300px;
+  }
 }
 /*# sourceMappingURL=App.css.map */

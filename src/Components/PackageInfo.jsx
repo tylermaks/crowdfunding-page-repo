@@ -3,7 +3,7 @@ import React from "react"
 //{name, price, description, left, outOfStock}
 import {aboutData} from "../componentData"
 
-function PackageInfo(){ 
+function PackageInfo(props){ 
     return(
         <div>
             {
@@ -13,9 +13,13 @@ function PackageInfo(){
 
                     return(
                         <div className={"package-container " + outOfStock}>
+                        
                             <div className="row-package">
-                                <h3 className="title">{item.name}</h3>
-                                <h3 className="h3-alt">{"Pledge" + item.price + " or more"}</h3>
+                                {props.radioBtn}
+                                <article>
+                                    <h3 className="title">{item.name}</h3>
+                                    <h3 className="h3-alt">{"Pledge" + item.price + " or more"}</h3>  
+                                </article>
                             </div>
                             
                             <p>{item.description}</p>

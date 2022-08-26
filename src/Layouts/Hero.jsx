@@ -8,7 +8,6 @@ function Hero(){
     return(
         <section id="hero">
             <NavBar />
-            <ProductInfo />
         </section>
     )
 }

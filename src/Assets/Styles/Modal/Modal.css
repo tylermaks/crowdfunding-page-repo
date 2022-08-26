@@ -2,18 +2,8 @@
   position: absolute;
   top: 0;
   left: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   background-color: rgba(0, 0, 0, 0.7);
-  padding: 5rem 0;
-  height: 100%;
+  min-height: 100%;
   width: 100%;
   z-index: 1;
 }
@@ -22,7 +12,7 @@
   background-color: #fff;
   border-radius: 15px;
   padding: 3rem 1.5rem;
-  margin: 5rem 0;
+  margin: 10rem auto;
   max-width: 700px;
   width: 95%;
 }
@@ -45,5 +35,47 @@
 
 .modal-inner img {
   cursor: pointer;
+}
+
+.modal-radio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  margin-right: 2rem;
+  height: 25px;
+  width: 25px;
+}
+
+input[type='radio']:after {
+  width: 20px;
+  height: 20px;
+  border-radius: 15px;
+  top: 0px;
+  left: 0px;
+  position: relative;
+  content: '';
+  display: inline-block;
+  visibility: visible;
+}
+
+input[type='radio']:checked:after {
+  width: 17px;
+  height: 17px;
+  border-radius: 15px;
+  top: 0px;
+  left: 0px;
+  position: relative;
+  background-color: #3cb4ac;
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  border: 1px solid white;
 }
 /*# sourceMappingURL=Modal.css.map */

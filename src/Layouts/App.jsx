@@ -8,9 +8,9 @@ import "../Assets/Styles/AppStyles/App.css"
 function App() {
   return (
     <main className="App">
-      {/* <Modal /> */}
+      <Modal />
       <Hero />
-
+      <ProductInfo />
     </main>
   );
 }

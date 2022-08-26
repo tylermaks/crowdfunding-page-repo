@@ -52,13 +52,16 @@ $mdCyan: hsl(176, 50%, 47%);
     }  
 }
 
+.row-package{
+    display: flex;
+    align-items: center;
+}
+
 
 
 @media screen and (min-width: 768px) {
     .row-package{
-        display: flex;
         justify-content: space-between;
-        align-items: center;
         width: 100%;
     }
 
