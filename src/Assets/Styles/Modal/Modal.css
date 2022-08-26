@@ -38,6 +38,10 @@
 }
 
 .modal-radio {
+  -webkit-appearance: none;
+  border: 1px solid #3cb4ac;
+  border-radius: 50%;
+  outline: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

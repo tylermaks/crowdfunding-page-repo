@@ -14,16 +14,17 @@ function PackageInfo(props){
                     return(
                         <div className={"package-container " + outOfStock}>
                         
-                            <div className="row-package">
+                            <div className="row-package row-package--title">
                                 {props.radioBtn}
                                 <article>
                                     <h3 className="title">{item.name}</h3>
-                                    <h3 className="h3-alt">{"Pledge" + item.price + " or more"}</h3>  
+                                    <h3 className="h3-alt">{"Pledge " + item.price + " or more"}</h3>  
                                 </article>
                             </div>
                             
                             <p>{item.description}</p>
-                            <div className="row-package">
+                            
+                            <div className="row-package row-package--button">
                                 <div>
                                     <h1>{item.left}</h1>
                                     <span>left</span>
