@@ -5,34 +5,48 @@ $mdCyan: hsl(176, 50%, 47%);
     text-align: left;
 }
 
-.package-container{
+.package-info{
     border: 1px solid $dkGray;
     border-radius: 25px;
     margin-bottom: 2rem;
     padding: 2rem;
+    position: relative;
 
-    button{
-        display:block;
-        margin-top: 2rem;
-        padding: 1rem 3rem;
-    }
-
-    h1{
-        display: inline;
+    h2{
+        display:inline;
         margin-right: 10px;
     }
 
-    h3{
-        margin-bottom: 0.5em;
-    }
-
     p{
-        margin: 2rem 0;
+        margin: 2em 0;
     }
 }
 
-.h3-alt{
+.package-inner--modal{
+    display:flex;
+    align-items: center;
+}
+
+.package-title{
+    width: 100%;
+}
+
+.cyan-text{
     color: $mdCyan;
+    margin-top: 0.5em;
+}
+
+.select-reward{
+    margin-top: 2rem;
+    padding: 1rem 3rem;
+}
+
+.hidden{
+    display: none !important;
+}
+
+.modal-flex{
+    margin-left: 1rem;
 }
 
 .out-of-stock{
@@ -50,38 +64,35 @@ $mdCyan: hsl(176, 50%, 47%);
     h1, span {
         color:$dkGray;
     }  
-
-    input{
-        display: none;
-    }
 }
-
-.row-package{
-    display: flex;
-
-    &--title{
-        align-items: center;
-    }
-
-    &--button{
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    
-}
-
 
 
 @media screen and (min-width: 768px) {
-    .row-package{
-        flex-direction: row;
+    .package-inner, .package-title{
+        display: flex;
+        align-items: center;
         justify-content: space-between;
-        width: 100%;
     }
 
-    .package-container{
-        button{ 
-            margin: 0;
+    .select-reward, .cyan-text{
+        margin: 0;
+    }
+    
+    .package-inner--modal{
+        justify-content: flex-start;
+    }
+
+    .modal-flex{
+        justify-content: flex-start !important;
+
+        h3{
+            margin-right: 1em;
         }
+    }
+
+    .modal-abs{
+        position: absolute;
+        top: 1.75rem;
+        right: 2rem;
     }
 }

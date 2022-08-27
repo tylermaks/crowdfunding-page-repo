@@ -11,7 +11,7 @@
 .modal {
   background-color: #fff;
   border-radius: 15px;
-  padding: 3rem 1.5rem;
+  padding: 3rem 1rem;
   margin: 10rem auto;
   max-width: 700px;
   width: 95%;
@@ -37,6 +37,12 @@
   cursor: pointer;
 }
 
+.input-container {
+  height: 25px;
+  width: 25px;
+  margin-right: 1rem;
+}
+
 .modal-radio {
   -webkit-appearance: none;
   border: 1px solid #3cb4ac;
@@ -51,35 +57,16 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: relative;
-  margin-right: 2rem;
   height: 25px;
   width: 25px;
-}
-
-input[type='radio']:after {
-  width: 20px;
-  height: 20px;
-  border-radius: 15px;
-  top: 0px;
-  left: 0px;
-  position: relative;
-  content: '';
-  display: inline-block;
-  visibility: visible;
 }
 
 input[type='radio']:checked:after {
   width: 17px;
   height: 17px;
   border-radius: 15px;
-  top: 0px;
-  left: 0px;
-  position: relative;
   background-color: #3cb4ac;
   content: '';
-  display: inline-block;
-  visibility: visible;
   border: 1px solid white;
 }
 /*# sourceMappingURL=Modal.css.map */

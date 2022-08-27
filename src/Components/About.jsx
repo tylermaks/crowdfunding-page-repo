@@ -2,7 +2,7 @@ import React from "react"
 import PackageInfo from "./PackageInfo"
 
 import "../Assets/Styles/About/About.css"
-
+import {aboutData} from "../componentData"
 
 function About(){
     return(
@@ -18,8 +18,21 @@ function About(){
                 Featuring artisan craftmanship, the simplicity of design creates extra desk space below
                 below your computer to allow notepads, pens, and USB sticks to be stored under the stand.
             </p>
-         
-            <PackageInfo />
+
+            {
+                aboutData.slice(1).map(item => {
+                    return(
+                        <PackageInfo
+                            name={item.name}
+                            price={item.price}
+                            description={item.description}
+                            left={item.left}
+                            radioInput="hidden"
+                        />
+                    )
+                })
+            }
+        
         </section>
     )
 }

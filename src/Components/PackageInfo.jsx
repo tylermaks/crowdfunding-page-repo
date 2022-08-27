@@ -1,43 +1,35 @@
 import React from "react"
 
-//{name, price, description, left, outOfStock}
-import {aboutData} from "../componentData"
+function PackageInfo({name, price, description, left, radioInput, modal, id}){ 
 
-function PackageInfo(props){ 
+    const outOfStock = left === 0 ? "out-of-stock" : "" 
+    const modalFlex = modal ? "modal-flex" : ""
+    const modalAbs = modal ? "modal-abs" : ""
+    const modalHidden = modal ? "hidden" : ""
+    const noReward = id === 0 ? "hidden" : ""
+
     return(
-        <div>
-            {
-                aboutData.map(item => {
+        <div className={"package-info " + outOfStock}>
+            <div className="package-inner package-inner--modal">
+                <div className={"input-container" + !modalHidden}>
+                    <input className={radioInput} type="radio" name="modal-radio"/>
+                </div>
+                <article className={"package-title " + modalFlex}>
+                    <h3>{name}</h3>
+                    <h3 className={"cyan-text " + noReward}>{"Pledge " + price + " or more"}</h3>
+                </article>
+            </div>
 
-                    const outOfStock = item.left === 0 ? "out-of-stock" : ""
+            <p>{description}</p>
 
-                    return(
-                        <div className={"package-container " + outOfStock}>
-                        
-                            <div className="row-package row-package--title">
-                                {props.radioBtn}
-                                <article>
-                                    <h3 className="title">{item.name}</h3>
-                                    <h3 className="h3-alt">{"Pledge " + item.price + " or more"}</h3>  
-                                </article>
-                            </div>
-                            
-                            <p>{item.description}</p>
-                            
-                            <div className="row-package row-package--button">
-                                <div>
-                                    <h1>{item.left}</h1>
-                                    <span>left</span>
-                                </div>
-                                <button>Select Reward</button>
-                            </div>
-                        </div>
-                    )
-                })
-            }
+            <div className={"package-inner " + noReward}>
+                <div className={modalAbs}>
+                    <h2>{left}</h2>
+                    <span>left</span>
+                </div>
+                <button className={"select-reward " + modalHidden}>Select Reward</button>
+            </div>
         </div>
-
-    
     )
 }
 
