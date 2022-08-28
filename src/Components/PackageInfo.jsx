@@ -1,4 +1,5 @@
 import React from "react"
+import Pledge from "../Components/Pledge"
 
 function PackageInfo({name, price, description, left, radioInput, modal, id}){ 
 
@@ -29,6 +30,8 @@ function PackageInfo({name, price, description, left, radioInput, modal, id}){
                 </div>
                 <button className={"select-reward " + modalHidden}>Select Reward</button>
             </div>
+
+            <Pledge />
         </div>
     )
 }

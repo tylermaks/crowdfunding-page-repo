@@ -1,0 +1,56 @@
+$dkGray: hsl(0, 0%, 48%);
+$mdCyan: hsl(176, 50%, 47%);
+
+.pledge-container{
+    border-top:1px solid rgb(181, 181, 181);
+    padding-top: 1rem;
+    text-align: center;
+
+    label{
+        color:$dkGray;
+    }
+
+    div{
+        display:flex;
+        justify-content: space-between;
+        margin-top: 2rem;
+        width:100%;
+    }
+
+    input[type="text"]{
+        background-image: url("../../images/icon-dollar.svg");
+        background-repeat: no-repeat;
+        background-position: 1rem 1rem;
+
+        border:1px solid rgb(181, 181, 181);
+        border-radius: 25px;
+        font-family: "Commissioner", sans-serif;
+        font-weight: 700;
+        padding: 1rem;
+        text-align: center;
+        width: 100px;
+
+        &:focus{
+            outline: none;
+            border: 2px solid $mdCyan;
+        }
+    }
+
+}
+
+@media screen and (min-width:768px) {
+    .pledge-container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        div{
+            justify-content: flex-end;
+            margin: 0;
+        }
+
+        input{
+            margin-right: 1rem;
+        }
+    }
+}
