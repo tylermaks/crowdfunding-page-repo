@@ -1,7 +1,7 @@
 import React from "react"
-import PackageInfo from "../Components/PackageInfo"
-import closeIcon from "../Assets/images/icon-close-modal.svg"
-import {aboutData} from "../componentData"
+// import PackageInfo from "../Components/PackageInfo"
+// import closeIcon from "../Assets/images/icon-close-modal.svg"
+// import {aboutData} from "../componentData"
 
 import "../Assets/Styles/Modal/Modal.css"
 
@@ -9,7 +9,7 @@ function Modal(){
     return(
         <div className="modal-background">
             <section className="modal">
-                <div className="modal-inner">
+                {/* <div className="modal-inner">
                     <h2>Back this project</h2>
                     <img src={closeIcon} alt="Close Modal" />
                 </div>
@@ -32,7 +32,7 @@ function Modal(){
                             )
                         })
                     }
-                </div>
+                </div> */}
             </section>
         </div>
     )

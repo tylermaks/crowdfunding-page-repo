@@ -22,14 +22,6 @@ $mdCyan: hsl(176, 50%, 47%);
     }
 }
 
-.package-inner--modal{
-    display:flex;
-    align-items: center;
-}
-
-.package-title{
-    width: 100%;
-}
 
 .cyan-text{
     color: $mdCyan;
@@ -68,20 +60,11 @@ $mdCyan: hsl(176, 50%, 47%);
 
 
 @media screen and (min-width: 768px) {
-    .package-inner, .package-title{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
 
     .select-reward, .cyan-text{
         margin: 0;
     }
     
-    .package-inner--modal{
-        justify-content: flex-start;
-    }
-
     .modal-flex{
         justify-content: flex-start !important;
 

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,cAAc,CAAA;EACV,KAAK,EAAE,IAAI;CACd;;AAED,AAAA,OAAO,CAAA;EACH,OAAO,EAAC,IAAI;CACf;;AAED,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,KAAK;EAC/B,AAAA,cAAc,CAAA;IACV,OAAO,EAAE,IAAI;IACb,WAAW,EAAE,MAAM;IACnB,eAAe,EAAE,aAAa;GACjC",
+    "sources": [
+        "PackageComponents.scss"
+    ],
+    "names": [],
+    "file": "PackageComponents.css"
+}

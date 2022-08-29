@@ -26,8 +26,8 @@ function About(){
                             name={item.name}
                             price={item.price}
                             description={item.description}
-                            left={item.left}
                             radioInput="hidden"
+                            left={item.left}
                         />
                     )
                 })

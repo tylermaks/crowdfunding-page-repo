@@ -1,0 +1,15 @@
+.package-inner{
+    width: 100%;
+}
+
+.hidden{
+    display:none;
+}
+
+@media screen and (min-width:768px) {
+    .package-inner{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
